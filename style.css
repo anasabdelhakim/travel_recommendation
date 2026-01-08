@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+}
+a {
+  transition: color 0.3s ease-in-out;
+  color: white;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.active {
+  color: #055157;
+}
+p {
+  opacity: 0.8;
+}
+body {
+  background-color: #f4f4f4;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.logo h1 {
+  font-size: 24px;
+  color: #eee;
+  font-weight: bold;
+}
+.header {
+  background: linear-gradient(to right, #02282b, #013538);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 80px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-weight: bold;
+}
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo_image {
+  height: 60px;
+  width: 60px;
+}
+
+.search {
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+.search .data {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 500px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 15px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: 1000;
+}
+.search .data img {
+  border-radius: 10px;
+}
+.search .data .item {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.search .data .item:last-child {
+  margin-bottom: 0;
+}
+.listen {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+.vist_btn {
+  width: 100px;
+}
+.search_Input {
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+.item-image {
+  max-width: 100%;
+  object-fit: cover;
+}
+.search button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #055157;
+  color: white;
+  cursor: pointer;
+}
+.date-nfs {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #013538a7;
+  color: white;
+}
+
+.line-style {
+  width: 2px;
+  height: 300px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.side-links {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  z-index: 1000;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social svg {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+.recommendation-section {
+  display: flex;
+  padding: 10px 150px;
+  align-items: center;
+  position: relative;
+  background-image: url("assests/hero.webp");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 80px);
+}
+#recommendationSectionAbout {
+  align-items: start;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #01373bce, rgba(0, 0, 139, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+.recommendation-container {
+  color: white;
+  z-index: 1;
+}
+
+#recommendationContainerforMain {
+  max-width: 400px;
+}
+#recommendationContainerforContact {
+  max-width: 100%;
+}
+#recommendationContainerforAbout {
+  max-width: 100%;
+}
+.recommendation-container h1 {
+  text-transform: uppercase;
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+.recommendation-container p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.recommendation-container .book {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #055157;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#about_sub {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #013538a7;
+}
+.team {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.team-collection {
+  margin-top: 60px;
+  display: flex;
+  padding: 10px 40px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.team-collection h2 {
+  width: 180px;
+  margin-right: 60px;
+  font-size: 60px;
+}
+.team_member {
+  flex: 1;
+  padding: 20px;
+  background-color: #013538a7;
+}
+.team_member p {
+  font-size: 14px;
+}
+.team_member button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 16px;
+  background-color: #1233c4a7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.team_member img {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #1233c4a7;
+  width: 30px;
+  height: 30px;
+}
+#recommendationContainerforContact {
+  width: 100%;
+}
+.contactUs_container {
+  width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact_form {
+  width: 500px;
+  display: grid;
+  gap: 10px;
+  padding: 15px;
+
+  background-color: #0135386a;
+}
+.contact_form input {
+  font-size: 18px;
+  padding: 20px 8px;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #eeeeee6e;
+  height: 30px;
+  background-color: transparent;
+}
+
+.contact_form textarea {
+  font-size: 18px;
+  padding: 20px 8px;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #eeeeee6e;
+  background-color: transparent;
+}
+.contact_form button {
+  margin-top: 30px;
+  padding: 8px 25px;
+  font-size: 16px;
+  background-color: #055157;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
